@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Gap Analyzer | Career Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Skill Gap Analyzer</h1>
+            <p>Find out what skills you need for your dream job</p>
+        </div>
+
+        <div class="input-section">
+            <div class="form-group">
+                <label>✏️ Your Current Skills:</label>
+                <textarea id="skills" rows="3" placeholder="Example: Python, Excel, Communication, Teamwork, HTML"></textarea>
+                <small>Separate skills with commas</small>
+            </div>
+
+            <div class="form-group">
+                <label>🎯 Your Dream Career:</label>
+                <select id="career">
+                    <option value="">-- Select a career --</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                    <option value="AI/ML Engineer">AI/ML Engineer</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                    <option value="Product Manager">Product Manager</option>
+                    <option value="UX Designer">UX Designer</option>
+                </select>
+            </div>
+
+            <button onclick="analyzeGap()">🔍 Analyze Skill Gap</button>
+        </div>
+
+        <div id="result" class="result-section" style="display: none;">
+            <div class="result-card">
+                <div id="result-content"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>💡 Tip: Add both technical and soft skills for better analysis</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
